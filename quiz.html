@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Table de rappel</h1>
+        <h2>Quizz</h2>
+    </div>
+    <div class="container">
+        <div class="image-section">
+            <img id="question-image" src="" alt="Image question">
+        </div>
+        <div class="question-section">
+            <div    id="answer-options">
+                <!-- Buttons for answer options will be added here -->
+            </div>
+        </div>
+        <div class="score-section">
+            <div id="score">Bonne réponses : 0</div>
+            <!--<div id="bad-answers">Mauvaises réponses : 0</div> -->
+            <div id="timer">0s</div>
+        </div>
+        <div class="feedback-correct" style="display: none;">Correct !</div>
+        <div class="feedback-incorrect" style="display: none;">Incorrect. La bonne réponse était :</div>
+        <div class="back-section">
+            <button id="back-to-difficulty-btn">Choix de difficulté</button>
+            <button id="back-to-home-btn" onclick="window.location.href='index.html'">Menu principal</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

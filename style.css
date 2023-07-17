@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f2f3;
+}
+
+body button{
+    cursor: pointer;
+}
+
+.title h1{
+    font-size: 40px;
+    color:#c0a9bd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.title h2{
+    font-size: 35px;
+    color:#c0a9bd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.container h1{
+    font-size: 30px;
+    color: #373e41;
+}
+
+.container ul {
+    padding-inline-start: 0px;
+}
+
+
+.container li{
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #c0a9bd; /* Ajout d'une bordure autour du cadre */
+    background-color: #c0a9bd;
+    font-weight: bold;
+    border-radius: 5px;
+    list-style-type : none;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 300px; /* Définissez la hauteur maximale souhaitée pour l'image ici */
+    overflow: hidden; /* Pour cacher les parties d'image qui pourraient dépasser */
+    border: 2px solid #c0a9bd; /* Ajout d'une bordure autour du cadre */
+    border-radius: 10px;
+    background-color: white;
+}
+
+img {
+    max-width: 98%;
+    max-height: 98%;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Pour que l'image s'adapte à la taille du cadre sans déborder */
+}
+
+.question-section {
+    width: 100%; /* Le cadre QCM prendra la largeur maximale disponible */
+    max-height: 500px; /* Définissez la hauteur maximale souhaitée pour le cadre QCM ici */
+    overflow-y: auto; /* Ajouter une barre de défilement si le QCM dépasse la hauteur maximale */
+}
+
+.container button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #c0a9bd; /* Ajout d'une bordure autour du cadre */
+    background-color: #c0a9bd;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.back-section {
+    margin-top: 20px;
+}
+
+.container .back-section button{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px solid #c0a9bd; /* Ajout d'une bordure autour du cadre */
+    background-color: #f4f2f3 ;
+    color: #c0a9bd;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.score-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.feedback-correct, .feedback-incorrect {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 128, 0, 0.8);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.feedback-incorrect {
+    background-color: rgba(255, 0, 0, 0.8);
+    top: 250px;
+}
+
+
